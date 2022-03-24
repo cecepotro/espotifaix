@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class Album {
 
+    // Si ves esto se sincronizó correctamente
     private int id;
     private String nombre;
     private Artista artista;
