@@ -5,8 +5,8 @@
 package mx.itson.espotifaix.entidades;
 
 /**
- *
- * @author jesus
+ * Representa el artista, cantante o banda musical a la que corresponde los álbumes.
+ * @author Jesús Pérez Ceceña
  */
 public class Artista {
     private int id;
@@ -46,17 +46,18 @@ public class Artista {
     }
 
     /**
-     * @return the descripcion
+     * Obtiene el valor del atributo descripcion.
+     * @return El atributo descripcion.
      */
     public String getDescripcion() {
         return descripcion;
     }
 
     /**
-     * @param descripcion the descripcion to set
+     * Asigna el valor del atributo descripcion.
+     * @param descripcion Valor a asignar al atributo descripcion.
      */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
 }

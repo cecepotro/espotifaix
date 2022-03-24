@@ -8,8 +8,8 @@ import java.util.Date;
 import java.util.List;
 
 /**
- *
- * @author jesus
+ * Representa los álbumes de canciones disponibles en la plataforma.
+ * @author Jesús Pérez Ceceña
  */
 public class Album {
 
@@ -20,75 +20,82 @@ public class Album {
     private Date fechaLanzamiento;
     
     /**
-     * @return the id
+     * Obtiene el valor del atributo id.
+     * @return El atributo id.
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id the id to set
+     * Asigna el valor del atributo id.
+     * @param id Valor a asignar al atributo id.
      */
     public void setId(int id) {
         this.id = id;
     }
 
     /**
-     * @return the nombre
+     * Obtiene el valor del atributo nombre.
+     * @return El atributo nombre.
      */
     public String getNombre() {
         return nombre;
     }
 
     /**
-     * @param nombre the nombre to set
+     * Asigna el valor del atributo nombre.
+     * @param nombre Valor a asignar al atributo nombre.
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     /**
-     * @return the artista
+     * Obtiene el valor del atributo artista.
+     * @return El atributo artista.
      */
     public Artista getArtista() {
         return artista;
     }
 
     /**
-     * @param artista the artista to set
+     * Asigna el valor del atributo artista.
+     * @param artista Valor a asignar al atributo artista.
      */
     public void setArtista(Artista artista) {
         this.artista = artista;
     }
 
     /**
-     * @return the canciones
+     * Obtiene el valor del atributo canciones.
+     * @return El atributo canciones.
      */
     public List<Cancion> getCanciones() {
         return canciones;
     }
 
     /**
-     * @param canciones the canciones to set
+     * Asigna el valor del atributo canciones.
+     * @param canciones Valor a asignar al atributo canciones.
      */
     public void setCanciones(List<Cancion> canciones) {
         this.canciones = canciones;
     }
 
     /**
-     * @return the fechaLanzamiento
+     * Obtiene el valor del atributo fechaLanzamiento.
+     * @return El atributo fechaLanzamiento
      */
     public Date getFechaLanzamiento() {
         return fechaLanzamiento;
     }
 
     /**
-     * @param fechaLanzamiento the fechaLanzamiento to set
+     * Asigna el valor del atributo fechaLanzamiento.
+     * @param fechaLanzamiento Valor a asignar al atributo fechaLanzamiento.
      */
     public void setFechaLanzamiento(Date fechaLanzamiento) {
         this.fechaLanzamiento = fechaLanzamiento;
     }
-    
-
-    
 }
