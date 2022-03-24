@@ -4,12 +4,21 @@
  */
 package mx.itson.espotifaix.entidades;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Representa las canciones disponibles en la plataforma musical.
  * @author Jesús Pérez Ceceña
  */
+@Entity
 public class Cancion {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
     private int orden;
