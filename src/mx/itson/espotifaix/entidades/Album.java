@@ -11,7 +11,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  * Representa los álbumes de canciones disponibles en la plataforma.
@@ -25,8 +29,12 @@ public class Album {
     private int id;
     private String nombre;
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name ="idArtista")
     private Artista artista;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name="idAlbum")
     private List<Cancion> canciones;
+    @Temporal(TemporalType.DATE)
     private Date fechaLanzamiento;
     
     /**
