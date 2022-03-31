@@ -11,7 +11,7 @@
             com.mysql.cj.jdbc.Driver
         </property>
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/espotifaidb
+            jdbc:mysql://127.0.0.1:3306/espotifaidb?useSSL=false
         </property>
         <property name="hibernate.connection.username">
             root
